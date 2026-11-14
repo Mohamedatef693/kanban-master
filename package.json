@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "sweetalert2": "^11.26.25",
+    "tailwindcss": "^4.3.3"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run tailwind\" \"npm run typeScript\"",
+    "tailwind": "npx @tailwindcss/cli -i ./src/style.css -o ./dist/output.css --watch",
+    "typeScript": "npx tsc --watch"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^7.0.2"
+  }
+}
